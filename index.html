@@ -30,17 +30,43 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item"><a class="nav-link active" href="#">Browse</a></li>
-              <li class="nav-item"><a class="nav-link active" href="#">Landings</a></li>
-              <li class="nav-item"><a class="nav-link active" href="#">Pages</a></li>
-              <li class="nav-item"><a class="nav-link active" href="#">Accounts</a></li>
+              <li class="nav-item dropdown">
+                <a class="active nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Browse </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Link</a></li>
+                  <li><a class="dropdown-item" href="#">Link</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="active nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Landings </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Link</a></li>
+                  <li><a class="dropdown-item" href="#">Link</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="active nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Pages </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Link</a></li>
+                  <li><a class="dropdown-item" href="#">Link</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="active nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Accounts </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Link</a></li>
+                  <li><a class="dropdown-item" href="#">Link</a></li>
+                </ul>
+              </li>
             </ul>
           </div>
           <div class="d-flex nav-icons">
-            <div class="bg-body-tertiary text-center rounded-circle me-3 d-flex justify-content-center">
+            <div class="bg-body-tertiary text-center rounded-circle me-3 d-flex justify-content-center position-relative">
               <img src="./assets/imgs/bell.svg" class="w-50" alt="icon" />
+              <span class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle"> </span>
             </div>
-            <div>
+            <div class="position-relative">
+              <span class="position-absolute bottom-0 end-0 p-1 bg-success border border-light rounded-circle"> </span>
               <img src="./assets/imgs/avatar-1.jpg" class="rounded-circle" alt="avatar" />
             </div>
           </div>
@@ -104,13 +130,26 @@
       <section class="recommended py-5">
         <div class="container">
           <h3 class="mb-3">Recommended to you</h3>
-          <div class="row">
+          <div class="row g-5">
             <div class="col">
               <div class="card border-0 shadow-sm">
                 <img src="./assets/imgs/course-graphql.jpg" class="card-img-top" alt="graphQL course" />
                 <div class="card-body">
                   <h5 class="card-title h6">GraphQL: introduction to grapgQL for beginners</h5>
-                  <p class="card-text">Some quick example text</p>
+                  <div class="course-info d-flex align-items-center">
+                    <span class="me-2"><img src="./assets/imgs/clock-gray.svg" alt="clock icon" /></span><span class="me-2">2h 40m</span
+                    ><span class="d-flex me-2"><img class="me-2" src="./assets/imgs/chart.svg" alt="" />Advance</span>
+                  </div>
+                  <div class="course-review d-flex align-items-center py-2">
+                    <img src="./assets/imgs/star-fill.svg" alt="" />
+                    <img src="./assets/imgs/star-fill.svg" alt="" />
+                    <img src="./assets/imgs/star-fill.svg" alt="" />
+                    <img src="./assets/imgs/star-half.svg" alt="" />
+                    <img src="./assets/imgs/star-empty.svg" alt="" />
+                    <span class="fw-medium">3.5</span>
+                    <a class="text-secondary text-decoration-none" href="#">(1,500)</a>
+                  </div>
+                  <p class="mb-0"><span class="fw-bold">$550</span> <del class="text-secondary">$700</del></p>
                 </div>
                 <div class="card-footer d-flex align-items-center bg-body border-light-subtle">
                   <img class="thumbs rounded-circle me-2" src="./assets/imgs/avatar-5.jpg" alt="avatar" />
@@ -124,7 +163,20 @@
                 <img src="./assets/imgs/course-javascript.jpg" class="card-img-top" alt="javascript course" />
                 <div class="card-body">
                   <h5 class="card-title h6">A Complete Begginner's Guide to JavaScript</h5>
-                  <p class="card-text">Some quick example text</p>
+                  <div class="course-info d-flex align-items-center">
+                    <span class="me-2"><img src="./assets/imgs/clock-gray.svg" alt="clock icon" /></span><span class="me-2">2h 40m</span
+                    ><span class="d-flex me-2"><img class="me-2" src="./assets/imgs/chart.svg" alt="" />Advance</span>
+                  </div>
+                  <div class="course-review d-flex align-items-center py-2">
+                    <img src="./assets/imgs/star-fill.svg" alt="" />
+                    <img src="./assets/imgs/star-fill.svg" alt="" />
+                    <img src="./assets/imgs/star-fill.svg" alt="" />
+                    <img src="./assets/imgs/star-half.svg" alt="" />
+                    <img src="./assets/imgs/star-empty.svg" alt="" />
+                    <span class="fw-medium">3.5</span>
+                    <a class="text-secondary text-decoration-none" href="#">(1,500)</a>
+                  </div>
+                  <p class="mb-0"><span class="fw-bold">$550</span> <del class="text-secondary">$700</del></p>
                 </div>
                 <div class="card-footer d-flex align-items-center bg-body border-light-subtle">
                   <img class="thumbs rounded-circle me-2" src="./assets/imgs/avatar-1.jpg" alt="avatar" />
@@ -138,7 +190,20 @@
                 <img src="./assets/imgs/course-node.jpg" class="card-img-top" alt="node js course" />
                 <div class="card-body">
                   <h5 class="card-title h6">Beginning Node.js, Express & MongoDB Development</h5>
-                  <p class="card-text">Some quick example text</p>
+                  <div class="course-info d-flex align-items-center">
+                    <span class="me-2"><img src="./assets/imgs/clock-gray.svg" alt="clock icon" /></span><span class="me-2">2h 40m</span
+                    ><span class="d-flex me-2"><img class="me-2" src="./assets/imgs/chart.svg" alt="" />Advance</span>
+                  </div>
+                  <div class="course-review d-flex align-items-center py-2">
+                    <img src="./assets/imgs/star-fill.svg" alt="" />
+                    <img src="./assets/imgs/star-fill.svg" alt="" />
+                    <img src="./assets/imgs/star-fill.svg" alt="" />
+                    <img src="./assets/imgs/star-half.svg" alt="" />
+                    <img src="./assets/imgs/star-empty.svg" alt="" />
+                    <span class="fw-medium">3.5</span>
+                    <a class="text-secondary text-decoration-none" href="#">(1,500)</a>
+                  </div>
+                  <p class="mb-0"><span class="fw-bold">$550</span> <del class="text-secondary">$700</del></p>
                 </div>
                 <div class="card-footer d-flex align-items-center bg-body border-light-subtle">
                   <img class="thumbs rounded-circle me-2" src="./assets/imgs/avatar-3.jpg" alt="avatar" />
@@ -152,7 +217,20 @@
                 <img src="./assets/imgs/course-laravel.jpg" class="card-img-top" alt="laravel" />
                 <div class="card-body">
                   <h5 class="card-title h6">Laravel: The Ultimate Beginner's Guide to Learn</h5>
-                  <p class="card-text">Some quick example text</p>
+                  <div class="course-info d-flex align-items-center">
+                    <span class="me-2"><img src="./assets/imgs/clock-gray.svg" alt="clock icon" /></span><span class="me-2">2h 40m</span
+                    ><span class="d-flex me-2"><img class="me-2" src="./assets/imgs/chart.svg" alt="" />Advance</span>
+                  </div>
+                  <div class="course-review d-flex align-items-center py-2">
+                    <img src="./assets/imgs/star-fill.svg" alt="" />
+                    <img src="./assets/imgs/star-fill.svg" alt="" />
+                    <img src="./assets/imgs/star-fill.svg" alt="" />
+                    <img src="./assets/imgs/star-half.svg" alt="" />
+                    <img src="./assets/imgs/star-empty.svg" alt="" />
+                    <span class="fw-medium">3.5</span>
+                    <a class="text-secondary text-decoration-none" href="#">(1,500)</a>
+                  </div>
+                  <p class="mb-0"><span class="fw-bold">$550</span> <del class="text-secondary">$700</del></p>
                 </div>
                 <div class="card-footer d-flex align-items-center bg-body border-light-subtle">
                   <img class="thumbs rounded-circle me-2" src="./assets/imgs/avatar-7.jpg" alt="avatar" />
@@ -164,16 +242,29 @@
           </div>
         </div>
       </section>
-      <section class="popular">
+      <section class="popular py-5">
         <div class="container">
           <h3 class="mb-3">Most Popular</h3>
-          <div class="row">
+          <div class="row g-5">
             <div class="col">
               <div class="card border-0 shadow-sm">
                 <img src="./assets/imgs/course-html.jpg" class="card-img-top" alt="html5 course" />
                 <div class="card-body">
                   <h5 class="card-title h6">HTML Full Course - Build a Website Tutorial</h5>
-                  <p class="card-text">Some quick example text</p>
+                  <div class="course-info d-flex align-items-center">
+                    <span class="me-2"><img src="./assets/imgs/clock-gray.svg" alt="clock icon" /></span><span class="me-2">2h 40m</span
+                    ><span class="d-flex me-2"><img class="me-2" src="./assets/imgs/chart.svg" alt="" />Advance</span>
+                  </div>
+                  <div class="course-review d-flex align-items-center py-2">
+                    <img src="./assets/imgs/star-fill.svg" alt="" />
+                    <img src="./assets/imgs/star-fill.svg" alt="" />
+                    <img src="./assets/imgs/star-fill.svg" alt="" />
+                    <img src="./assets/imgs/star-half.svg" alt="" />
+                    <img src="./assets/imgs/star-empty.svg" alt="" />
+                    <span class="fw-medium">3.5</span>
+                    <a class="text-secondary text-decoration-none" href="#">(1,500)</a>
+                  </div>
+                  <p class="mb-0"><span class="fw-bold">$550</span> <del class="text-secondary">$700</del></p>
                 </div>
                 <div class="card-footer d-flex align-items-center bg-body border-light-subtle">
                   <img class="thumbs rounded-circle me-2" src="./assets/imgs/avatar-4.jpg" alt="avatar" />
@@ -187,7 +278,20 @@
                 <img src="./assets/imgs/course-javascript.jpg" class="card-img-top" alt="javascript course" />
                 <div class="card-body">
                   <h5 class="card-title h6">A Complete Begginner's Guide to JavaScript</h5>
-                  <p class="card-text">Some quick example text</p>
+                  <div class="course-info d-flex align-items-center">
+                    <span class="me-2"><img src="./assets/imgs/clock-gray.svg" alt="clock icon" /></span><span class="me-2">2h 40m</span
+                    ><span class="d-flex me-2"><img class="me-2" src="./assets/imgs/chart.svg" alt="" />Advance</span>
+                  </div>
+                  <div class="course-review d-flex align-items-center py-2">
+                    <img src="./assets/imgs/star-fill.svg" alt="" />
+                    <img src="./assets/imgs/star-fill.svg" alt="" />
+                    <img src="./assets/imgs/star-fill.svg" alt="" />
+                    <img src="./assets/imgs/star-half.svg" alt="" />
+                    <img src="./assets/imgs/star-empty.svg" alt="" />
+                    <span class="fw-medium">3.5</span>
+                    <a class="text-secondary text-decoration-none" href="#">(1,500)</a>
+                  </div>
+                  <p class="mb-0"><span class="fw-bold">$550</span> <del class="text-secondary">$700</del></p>
                 </div>
                 <div class="card-footer d-flex align-items-center bg-body border-light-subtle">
                   <img class="thumbs rounded-circle me-2" src="./assets/imgs/avatar-1.jpg" alt="avatar" />
@@ -201,7 +305,20 @@
                 <img src="./assets/imgs/course-node.jpg" class="card-img-top" alt="node js course" />
                 <div class="card-body">
                   <h5 class="card-title h6">Beginning Node.js, Express & MongoDB Development</h5>
-                  <p class="card-text">Some quick example text</p>
+                  <div class="course-info d-flex align-items-center">
+                    <span class="me-2"><img src="./assets/imgs/clock-gray.svg" alt="clock icon" /></span><span class="me-2">2h 40m</span
+                    ><span class="d-flex me-2"><img class="me-2" src="./assets/imgs/chart.svg" alt="" />Advance</span>
+                  </div>
+                  <div class="course-review d-flex align-items-center py-2">
+                    <img src="./assets/imgs/star-fill.svg" alt="" />
+                    <img src="./assets/imgs/star-fill.svg" alt="" />
+                    <img src="./assets/imgs/star-fill.svg" alt="" />
+                    <img src="./assets/imgs/star-half.svg" alt="" />
+                    <img src="./assets/imgs/star-empty.svg" alt="" />
+                    <span class="fw-medium">3.5</span>
+                    <a class="text-secondary text-decoration-none" href="#">(1,500)</a>
+                  </div>
+                  <p class="mb-0"><span class="fw-bold">$550</span> <del class="text-secondary">$700</del></p>
                 </div>
                 <div class="card-footer d-flex align-items-center bg-body border-light-subtle">
                   <img class="thumbs rounded-circle me-2" src="./assets/imgs/avatar-3.jpg" alt="avatar" />
@@ -215,7 +332,20 @@
                 <img src="./assets/imgs/course-react.jpg" class="card-img-top" alt="react course" />
                 <div class="card-body">
                   <h5 class="card-title h6">How to easily create a website with React</h5>
-                  <p class="card-text">Some quick example text</p>
+                  <div class="course-info d-flex align-items-center">
+                    <span class="me-2"><img src="./assets/imgs/clock-gray.svg" alt="clock icon" /></span><span class="me-2">2h 40m</span
+                    ><span class="d-flex me-2"><img class="me-2" src="./assets/imgs/chart.svg" alt="" />Advance</span>
+                  </div>
+                  <div class="course-review d-flex align-items-center py-2">
+                    <img src="./assets/imgs/star-fill.svg" alt="" />
+                    <img src="./assets/imgs/star-fill.svg" alt="" />
+                    <img src="./assets/imgs/star-fill.svg" alt="" />
+                    <img src="./assets/imgs/star-half.svg" alt="" />
+                    <img src="./assets/imgs/star-empty.svg" alt="" />
+                    <span class="fw-medium">3.5</span>
+                    <a class="text-secondary text-decoration-none" href="#">(1,500)</a>
+                  </div>
+                  <p class="mb-0"><span class="fw-bold">$550</span> <del class="text-secondary">$700</del></p>
                 </div>
                 <div class="card-footer d-flex align-items-center bg-body border-light-subtle">
                   <img class="thumbs rounded-circle me-2" src="./assets/imgs/avatar-2.jpg" alt="avatar" />
@@ -227,16 +357,29 @@
           </div>
         </div>
       </section>
-      <section class="trending">
+      <section class="trending py-5">
         <div class="container">
           <h3 class="mb-3">Trending</h3>
-          <div class="row">
+          <div class="row g-5">
             <div class="col">
               <div class="card border-0 shadow-sm">
                 <img src="./assets/imgs/course-gatsby.jpg" class="card-img-top" alt="gatsby course" />
                 <div class="card-body">
                   <h5 class="card-title h6">Revolutionize how you build the web</h5>
-                  <p class="card-text">Some quick example text</p>
+                  <div class="course-info d-flex align-items-center">
+                    <span class="me-2"><img src="./assets/imgs/clock-gray.svg" alt="clock icon" /></span><span class="me-2">2h 40m</span
+                    ><span class="d-flex me-2"><img class="me-2" src="./assets/imgs/chart.svg" alt="" />Advance</span>
+                  </div>
+                  <div class="course-review d-flex align-items-center py-2">
+                    <img src="./assets/imgs/star-fill.svg" alt="" />
+                    <img src="./assets/imgs/star-fill.svg" alt="" />
+                    <img src="./assets/imgs/star-fill.svg" alt="" />
+                    <img src="./assets/imgs/star-half.svg" alt="" />
+                    <img src="./assets/imgs/star-empty.svg" alt="" />
+                    <span class="fw-medium">3.5</span>
+                    <a class="text-secondary text-decoration-none" href="#">(1,500)</a>
+                  </div>
+                  <p class="mb-0"><span class="fw-bold">$550</span> <del class="text-secondary">$700</del></p>
                 </div>
                 <div class="card-footer d-flex align-items-center bg-body border-light-subtle">
                   <img class="thumbs rounded-circle me-2" src="./assets/imgs/avatar-8.jpg" alt="avatar" />
@@ -250,7 +393,20 @@
                 <img src="./assets/imgs/course-html.jpg" class="card-img-top" alt="html5 course" />
                 <div class="card-body">
                   <h5 class="card-title h6">HTML Full Course - Build a Website Tutorial</h5>
-                  <p class="card-text">Some quick example text</p>
+                  <div class="course-info d-flex align-items-center">
+                    <span class="me-2"><img src="./assets/imgs/clock-gray.svg" alt="clock icon" /></span><span class="me-2">2h 40m</span
+                    ><span class="d-flex me-2"><img class="me-2" src="./assets/imgs/chart.svg" alt="" />Advance</span>
+                  </div>
+                  <div class="course-review d-flex align-items-center py-2">
+                    <img src="./assets/imgs/star-fill.svg" alt="" />
+                    <img src="./assets/imgs/star-fill.svg" alt="" />
+                    <img src="./assets/imgs/star-fill.svg" alt="" />
+                    <img src="./assets/imgs/star-half.svg" alt="" />
+                    <img src="./assets/imgs/star-empty.svg" alt="" />
+                    <span class="fw-medium">3.5</span>
+                    <a class="text-secondary text-decoration-none" href="#">(1,500)</a>
+                  </div>
+                  <p class="mb-0"><span class="fw-bold">$550</span> <del class="text-secondary">$700</del></p>
                 </div>
                 <div class="card-footer d-flex align-items-center bg-body border-light-subtle">
                   <img class="thumbs rounded-circle me-2" src="./assets/imgs/avatar-4.jpg" alt="avatar" />
@@ -264,7 +420,20 @@
                 <img src="./assets/imgs/course-node.jpg" class="card-img-top" alt="node js course" />
                 <div class="card-body">
                   <h5 class="card-title h6">Beginning Node.js, Express & MongoDB Development</h5>
-                  <p class="card-text">Some quick example text</p>
+                  <div class="course-info d-flex align-items-center">
+                    <span class="me-2"><img src="./assets/imgs/clock-gray.svg" alt="clock icon" /></span><span class="me-2">2h 40m</span
+                    ><span class="d-flex me-2"><img class="me-2" src="./assets/imgs/chart.svg" alt="" />Advance</span>
+                  </div>
+                  <div class="course-review d-flex align-items-center py-2">
+                    <img src="./assets/imgs/star-fill.svg" alt="" />
+                    <img src="./assets/imgs/star-fill.svg" alt="" />
+                    <img src="./assets/imgs/star-fill.svg" alt="" />
+                    <img src="./assets/imgs/star-half.svg" alt="" />
+                    <img src="./assets/imgs/star-empty.svg" alt="" />
+                    <span class="fw-medium">3.5</span>
+                    <a class="text-secondary text-decoration-none" href="#">(1,500)</a>
+                  </div>
+                  <p class="mb-0"><span class="fw-bold">$550</span> <del class="text-secondary">$700</del></p>
                 </div>
                 <div class="card-footer d-flex align-items-center bg-body border-light-subtle">
                   <img class="thumbs rounded-circle me-2" src="./assets/imgs/avatar-3.jpg" alt="avatar" />
@@ -278,7 +447,20 @@
                 <img src="./assets/imgs/course-laravel.jpg" class="card-img-top" alt="laravel" />
                 <div class="card-body">
                   <h5 class="card-title h6">Laravel: The Ultimate Beginner's Guide to Learn</h5>
-                  <p class="card-text">Some quick example text</p>
+                  <div class="course-info d-flex align-items-center">
+                    <span class="me-2"><img src="./assets/imgs/clock-gray.svg" alt="clock icon" /></span><span class="me-2">2h 40m</span
+                    ><span class="d-flex me-2"><img class="me-2" src="./assets/imgs/chart.svg" alt="" />Advance</span>
+                  </div>
+                  <div class="course-review d-flex align-items-center py-2">
+                    <img src="./assets/imgs/star-fill.svg" alt="" />
+                    <img src="./assets/imgs/star-fill.svg" alt="" />
+                    <img src="./assets/imgs/star-fill.svg" alt="" />
+                    <img src="./assets/imgs/star-half.svg" alt="" />
+                    <img src="./assets/imgs/star-empty.svg" alt="" />
+                    <span class="fw-medium">3.5</span>
+                    <a class="text-secondary text-decoration-none" href="#">(1,500)</a>
+                  </div>
+                  <p class="mb-0"><span class="fw-bold">$550</span> <del class="text-secondary">$700</del></p>
                 </div>
                 <div class="card-footer d-flex align-items-center bg-body border-light-subtle">
                   <img class="thumbs rounded-circle me-2" src="./assets/imgs/avatar-7.jpg" alt="avatar" />
@@ -291,7 +473,15 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer class="bg-body-secondary">
+      <div class="container">
+        <div class="row">
+          <div class="col p-2 border border-0 border-top">
+            <p class="text-secondary mb-0">&copy; 2022 Geeks. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

@@ -73,6 +73,9 @@ h6 {
   width: 30px;
 }
 
+.nav-icons div:first-child span {
+  translate: -50% 50%;
+}
 .nav-icons div img {
   width: 100%;
 }
@@ -94,4 +97,15 @@ h6 {
 .card-footer .thumbs {
   width: 35px;
   height: 35px;
+}
+
+.course-review img {
+  width: 20px;
+  height: 20px;
+}
+.course-review *:not(:last-child) {
+  padding-right: 0.3rem;
+}
+.course-review > span:first-of-type {
+  color: orange;
 }/*# sourceMappingURL=style.css.map */

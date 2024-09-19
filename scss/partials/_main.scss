@@ -22,3 +22,16 @@
     height: 35px;
   }
 }
+
+.course-review {
+  img {
+    width: 20px;
+    height: 20px;
+  }
+  *:not(:last-child) {
+    padding-right: 0.3rem;
+  }
+  & > span:first-of-type {
+    color: orange;
+  }
+}

@@ -1,7 +1,19 @@
-.nav-icons div {
-  height: 30px;
-  width: 30px;
+.nav-icons {
+  div {
+    height: 30px;
+    width: 30px;
+  }
 }
-.nav-icons div img {
-  width: 100%;
+
+.nav-icons {
+  div:first-child {
+    span {
+      translate: -50% 50%;
+    }
+  }
+  div {
+    img {
+      width: 100%;
+    }
+  }
 }
