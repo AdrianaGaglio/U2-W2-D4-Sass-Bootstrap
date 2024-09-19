@@ -5,10 +5,13 @@
 .features {
   .col {
     & > div:first-child {
-      vertical-align: top;
       background-color: #ffeeda;
       width: 35px;
       height: 35px;
+      img {
+        display: block;
+        margin-inline: auto;
+      }
     }
   }
 }

@@ -82,10 +82,13 @@ h6 {
 }
 
 .features .col > div:first-child {
-  vertical-align: top;
   background-color: #ffeeda;
   width: 35px;
   height: 35px;
+}
+.features .col > div:first-child img {
+  display: block;
+  margin-inline: auto;
 }
 
 .card-footer .thumbs {
